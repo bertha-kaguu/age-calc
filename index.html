@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Age Calculator</h1>
+    <p class="subtitle">Calculate your exact age in years, months and days</p>
+
+    <div class="input-section">
+        <input type="date" id="birthdate">
+        <button onclick="calculateAge()">Calculate Age</button>
+    </div>
+
+    <div class="result" id="result">
+        <div class="box">
+            <span id="years">0</span>
+            <p>Years</p>
+        </div>
+
+        <div class="box">
+            <span id="months">0</span>
+            <p>Months</p>
+        </div>
+
+        <div class="box">
+            <span id="days">0</span>
+            <p>Days</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
