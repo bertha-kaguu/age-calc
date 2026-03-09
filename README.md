@@ -83,7 +83,7 @@ The information is saved locally in the browser using LocalStorage.
 
 You can see it live here
 
-(https://bertha-kaguu.github.io/age-calc/)
+https://bertha-kaguu.github.io/age-calc/
 
 👨‍💻 Author
 
