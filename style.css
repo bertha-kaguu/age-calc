@@ -15,20 +15,14 @@
     }
     
     .container{
-    
     backdrop-filter: blur(20px);
-    background: rgba(255,255,255,0.2);
-    
+    background: rgba(255,255,255,0.25);
     padding:40px;
     border-radius:20px;
-    
     box-shadow:0 10px 40px rgba(0,0,0,0.2);
-    
-    width:450px;
+    width:500px;
     max-width:90%;
-    
     text-align:center;
-    
     }
     
     h1{
@@ -37,82 +31,83 @@
     }
     
     .input-section{
-    
     display:flex;
     gap:10px;
     margin-bottom:20px;
-    
     }
     
     input{
-    
     padding:10px;
     border:none;
     border-radius:8px;
-    
     }
     
     button{
-    
     padding:10px 15px;
-    
     border:none;
     border-radius:8px;
-    
     background:#fff;
-    
     font-weight:bold;
     cursor:pointer;
-    
     }
     
     .person{
-    
     margin-top:15px;
-    
     padding:15px;
-    
     border-radius:10px;
-    
-    background:rgba(255,255,255,0.4);
-    
+    background:rgba(255,255,255,0.5);
     color:#000;
-    
     }
     
     .age-box{
-    
     display:flex;
     justify-content:space-around;
-    
     margin-top:10px;
+    font-weight:bold;
+    }
     
+    .extra-info{
+    margin-top:10px;
+    font-size:14px;
+    }
+    
+    .progress-bar{
+    margin-top:10px;
+    height:8px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+    }
+    
+    .progress{
+    height:100%;
+    background:#4facfe;
+    width:0%;
+    transition:1s;
     }
     
     .theme-toggle{
-    
     position:absolute;
     top:20px;
     right:20px;
-    
     }
     
     .dark{
-    
     background:#111;
-    
     }
     
     .dark .container{
-    
-    background:rgba(0,0,0,0.4);
+    background:rgba(0,0,0,0.5);
     color:white;
-    
     }
     
     .dark .person{
-    
     background:rgba(0,0,0,0.6);
     color:white;
+    }
     
+    .seconds{
+    font-size:12px;
+    opacity:0.8;
+    margin-top:5px;
     }
