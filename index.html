@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Advanced Age Calculator</title>
+<title>Elite Age Calculator</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,49 +20,19 @@
 
 <div class="container">
 
-<h1>Age Calculator</h1>
-<p class="subtitle">Calculate your exact age and next birthday</p>
+<h1>Elite Age Calculator</h1>
 
 <div class="input-section">
+
+<input type="text" id="name" placeholder="Enter Name">
+
 <input type="date" id="birthdate">
-<button onclick="calculateAge()">Calculate</button>
-</div>
 
-<div class="result">
-
-<div class="box">
-<span id="years">0</span>
-<p>Years</p>
-</div>
-
-<div class="box">
-<span id="months">0</span>
-<p>Months</p>
-</div>
-
-<div class="box">
-<span id="days">0</span>
-<p>Days</p>
-</div>
+<button onclick="addPerson()">Add</button>
 
 </div>
 
-<div class="extra">
-
-<p>Weeks: <span id="weeks">0</span></p>
-<p>Total Days: <span id="totalDays">0</span></p>
-<p>Hours Lived: <span id="hours">0</span></p>
-<p>Minutes Lived: <span id="minutes">0</span></p>
-
-</div>
-
-<div class="birthday">
-
-<h3>Next Birthday</h3>
-<p id="nextBirthday">--</p>
-<p id="countdown"></p>
-
-</div>
+<div id="peopleList"></div>
 
 </div>
 
