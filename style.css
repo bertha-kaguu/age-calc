@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Segoe UI", sans-serif;
+    font-family:Segoe UI, sans-serif;
     }
     
     body{
@@ -10,25 +10,27 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:#333;
+    transition:0.4s;
     }
     
     .container{
     background:white;
     padding:40px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
     text-align:center;
-    width:350px;
+    width:400px;
+    max-width:90%;
+    animation:fadeIn 1s;
     }
     
     h1{
     margin-bottom:10px;
-    color:#333;
     }
     
     .subtitle{
-    font-size:14px;
     color:#777;
     margin-bottom:25px;
     }
@@ -36,7 +38,7 @@
     .input-section{
     display:flex;
     gap:10px;
-    margin-bottom:30px;
+    margin-bottom:25px;
     }
     
     input{
@@ -44,27 +46,27 @@
     padding:10px;
     border-radius:8px;
     border:1px solid #ccc;
-    font-size:14px;
     }
     
     button{
     padding:10px 15px;
     border:none;
-    background:#4facfe;
+    border-radius:8px;
+    background:#667eea;
     color:white;
     font-weight:bold;
-    border-radius:8px;
     cursor:pointer;
     transition:0.3s;
     }
     
     button:hover{
-    background:#2f8cff;
+    background:#4b5ed7;
     }
     
     .result{
     display:flex;
     justify-content:space-between;
+    margin-top:20px;
     }
     
     .box{
@@ -72,15 +74,70 @@
     padding:15px;
     border-radius:10px;
     width:90px;
+    transition:0.3s;
     }
     
     .box span{
     font-size:28px;
     font-weight:bold;
-    color:#333;
     }
     
-    .box p{
-    font-size:13px;
-    color:#777;
+    .extra{
+    margin-top:20px;
+    font-size:14px;
+    color:#555;
+    }
+    
+    .birthday{
+    margin-top:20px;
+    padding-top:15px;
+    border-top:1px solid #eee;
+    }
+    
+    .theme-toggle{
+    position:absolute;
+    top:20px;
+    right:20px;
+    }
+    
+    .theme-toggle button{
+    background:#333;
+    }
+    
+    /* Dark Mode */
+    
+    .dark{
+    background:#111;
+    color:white;
+    }
+    
+    .dark .container{
+    background:#1e1e1e;
+    color:white;
+    }
+    
+    .dark .box{
+    background:#2c2c2c;
+    }
+    
+    .dark input{
+    background:#333;
+    color:white;
+    border:1px solid #555;
+    }
+    
+    /* animation */
+    
+    @keyframes fadeIn{
+    
+    from{
+    opacity:0;
+    transform:translateY(20px);
+    }
+    
+    to{
+    opacity:1;
+    transform:translateY(0);
+    }
+    
     }
