@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professional Age Calculator</title>
+
+<title>Advanced Age Calculator</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+<div class="theme-toggle">
+<button id="toggleTheme">🌙</button>
+</div>
+
 <div class="container">
 
-    <h1>Age Calculator</h1>
-    <p class="subtitle">Calculate your exact age in years, months and days</p>
+<h1>Age Calculator</h1>
+<p class="subtitle">Calculate your exact age and next birthday</p>
 
-    <div class="input-section">
-        <input type="date" id="birthdate">
-        <button onclick="calculateAge()">Calculate Age</button>
-    </div>
+<div class="input-section">
+<input type="date" id="birthdate">
+<button onclick="calculateAge()">Calculate</button>
+</div>
 
-    <div class="result" id="result">
-        <div class="box">
-            <span id="years">0</span>
-            <p>Years</p>
-        </div>
+<div class="result">
 
-        <div class="box">
-            <span id="months">0</span>
-            <p>Months</p>
-        </div>
+<div class="box">
+<span id="years">0</span>
+<p>Years</p>
+</div>
 
-        <div class="box">
-            <span id="days">0</span>
-            <p>Days</p>
-        </div>
-    </div>
+<div class="box">
+<span id="months">0</span>
+<p>Months</p>
+</div>
+
+<div class="box">
+<span id="days">0</span>
+<p>Days</p>
+</div>
+
+</div>
+
+<div class="extra">
+
+<p>Weeks: <span id="weeks">0</span></p>
+<p>Total Days: <span id="totalDays">0</span></p>
+<p>Hours Lived: <span id="hours">0</span></p>
+<p>Minutes Lived: <span id="minutes">0</span></p>
+
+</div>
+
+<div class="birthday">
+
+<h3>Next Birthday</h3>
+<p id="nextBirthday">--</p>
+<p id="countdown"></p>
+
+</div>
 
 </div>
 
